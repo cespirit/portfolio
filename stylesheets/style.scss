@@ -1,12 +1,2 @@
-/* Output goes to CSS folder */
-/* Output both a minified and non-minified version for easy debugging */
-
 @import "bootstrap";
 
-.testStyle p {
-	color: #FFFFFF;
-	span {
-		font-size: 24px;
-		color: blue;
-	} 
-}
