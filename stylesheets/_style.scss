@@ -1,0 +1,5 @@
+/* Have it import _bootstrap.scss and then have grunt compile this into style.css */
+/* Output goes to CSS folder */
+/* Output both a minified and non-minified version for easy debugging */
+
+@import "bootstrap";
