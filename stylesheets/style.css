@@ -1489,8 +1489,8 @@ pre {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 16px;
+  padding-right: 16px; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -1498,19 +1498,19 @@ pre {
     clear: both; }
   @media (min-width: 768px) {
     .container {
-      width: 750px; } }
+      width: 752px; } }
   @media (min-width: 992px) {
     .container {
-      width: 970px; } }
+      width: 972px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1170px; } }
+      width: 1172px; } }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 16px;
+  padding-right: 16px; }
   .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
@@ -1518,8 +1518,8 @@ pre {
     clear: both; }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: -16px;
+  margin-right: -16px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -1529,8 +1529,8 @@ pre {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
@@ -2812,8 +2812,8 @@ select[multiple].input-lg,
 .form-horizontal .checkbox {
   min-height: 27px; }
 .form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: -16px;
+  margin-right: -16px; }
   .form-horizontal .form-group:before, .form-horizontal .form-group:after {
     content: " ";
     display: table; }
@@ -2825,7 +2825,7 @@ select[multiple].input-lg,
     margin-bottom: 0;
     padding-top: 7px; } }
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px; }
+  right: 16px; }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 14.33333px; } }
@@ -3588,8 +3588,8 @@ tbody.collapse.in {
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch; }
@@ -3629,8 +3629,8 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -16px;
+  margin-left: -16px; }
   @media (min-width: 768px) {
     .container > .navbar-header,
     .container > .navbar-collapse,
@@ -3668,7 +3668,7 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 15px 16px;
   font-size: 18px;
   line-height: 20px;
   height: 50px; }
@@ -3678,12 +3678,12 @@ tbody.collapse.in {
     display: block; }
   @media (min-width: 768px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-      margin-left: -15px; } }
+      margin-left: -16px; } }
 
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 16px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -3705,7 +3705,7 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 7.5px -15px; }
+  margin: 7.5px -16px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3737,9 +3737,9 @@ tbody.collapse.in {
           padding-bottom: 15px; } }
 
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 10px 16px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -3828,8 +3828,8 @@ tbody.collapse.in {
   @media (min-width: 768px) {
     .navbar-text {
       float: left;
-      margin-left: 15px;
-      margin-right: 15px; } }
+      margin-left: 16px;
+      margin-right: 16px; } }
 
 @media (min-width: 768px) {
   .navbar-left {
@@ -3837,7 +3837,7 @@ tbody.collapse.in {
 
   .navbar-right {
     float: right !important;
-    margin-right: -15px; }
+    margin-right: -16px; }
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
@@ -4177,7 +4177,7 @@ a.badge:hover, a.badge:focus {
 
 .jumbotron {
   padding: 30px 15px;
-  margin-bottom: 30px;
+  /*margin-bottom: $jumbotron-padding;*/
   color: inherit;
   background-color: #eeeeee; }
   .jumbotron h1,
@@ -5621,8 +5621,16 @@ button.close {
 body {
   padding-top: 50px; }
 
-.home h1, .home h2, .home h3, .home h4, .home h5, .home h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center; }
+
+.recent-projects, .about-me, .connect {
+  padding-bottom: 36px; }
+
+.site-copyright {
+  background: #111111;
+  color: #eeeeee; }
+
 .home .masthead {
   background-image: url("../images/masthead.jpg");
   background-size: cover;
@@ -5630,5 +5638,44 @@ body {
   background-repeat: none;
   background-attachment: fixed;
   height: 100vh; }
+.home .recent-projects {
+  background: white; }
+  .home .recent-projects .thumbnail {
+    transition: all 0.25s ease-out; }
+  .home .recent-projects .viewMore {
+    margin-top: 16px; }
+.home .recent-projects a:hover,
+.home .recent-projects a:focus {
+  text-decoration: none; }
+  .home .recent-projects a:hover .thumbnail,
+  .home .recent-projects a:focus .thumbnail {
+    background: lightblue;
+    position: relative;
+    z-index: 10;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+.home .about-me {
+  background: lavender; }
+.home .connect {
+  background: #2D2D2D;
+  color: #eeeeee; }
+  .home .connect .social li {
+    background: lightblue;
+    padding: 6px 8px;
+    border: 2px solid lightblue;
+    margin-left: 5px; }
+    .home .connect .social li:hover {
+      background: white; }
+
+.projects {
+  /*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */ }
+  .projects .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0; }
+  .projects .row.no-gutters > [class^="col-"],
+  .projects .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */

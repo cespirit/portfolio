@@ -23,7 +23,8 @@ module.exports = function(grunt) {
 					/* style: 'compressed' */
 				},
 				files: {
-					'stylesheets/style.css' : 'stylesheets/style.scss'
+					'stylesheets/style.css' : 'stylesheets/style.scss',
+					'stylesheets/_bootstrap.scss' : 'stylesheets/bootstrap/*.scss'
 				}
 			}
 		},
@@ -43,7 +44,7 @@ module.exports = function(grunt) {
 		watch: {
 			sass: {
 				// If anything in these files changes, run the tasks
-				files: ['stylesheets/*.scss'],
+				files: ['stylesheets/*.scss', 'stylesheets/bootstrap/*.scss'],
 				tasks: ['sass', 'cssmin']
 			}
 		},

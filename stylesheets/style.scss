@@ -1,14 +1,29 @@
 @import "bootstrap";
 
+$recent-proj-bg			: white;
+$about-me-bg			: lavender;
+$connect-bg				: #2D2D2D;
+$site-copyright-bg		: #111111;
+
+
 body { 
 	padding-top: 50px; 
 }
 
-.home {
-	h1, h2, h3, h4, h5, h6 {
-		text-align: center;
-	}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
 
+.recent-projects, .about-me, .connect {
+	padding-bottom: 36px;
+}
+
+.site-copyright {
+	background: $site-copyright-bg;
+	color: #eeeeee;
+}
+
+.home {
 	.masthead {
 		background-image: url("../images/masthead.jpg");
 		background-size: cover;
@@ -17,7 +32,65 @@ body {
 		background-attachment: fixed;
 		height: 100vh;
 	}
-	
+
+	.recent-projects {
+		background: $recent-proj-bg;
+
+		.thumbnail {
+			transition: all 0.25s ease-out;			
+		}
+
+		.viewMore {
+			margin-top: 16px;
+		}
+	}
+
+	.recent-projects a:hover, 
+	.recent-projects a:focus {
+		text-decoration: none;
+
+		.thumbnail {
+			background: lightblue;
+			position: relative;			
+			z-index: 10;
+			-webkit-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			transform:scale(1.1);
+		}
+	}
+
+	.about-me {
+		background: $about-me-bg;
+	}
+
+	.connect {
+		background: $connect-bg;
+		color: #eeeeee;
+
+		.social li {
+		  background: lightblue;
+		  padding: 6px 8px;
+		  border: 2px solid lightblue;
+		  margin-left: 5px;
+
+		  &:hover {
+		  	background: white;
+		  }
+		}
+	}	
+}
+
+.projects {
+	/*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */
+	.row.no-gutters {
+	   margin-right: 0;
+	   margin-left: 0;
+	}
+	.row.no-gutters > [class^="col-"],
+	.row.no-gutters > [class*=" col-"] {
+	   padding-right: 0;
+	   padding-left: 0;
+	}
 }
  
 
