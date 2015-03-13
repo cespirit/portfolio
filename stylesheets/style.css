@@ -5632,7 +5632,7 @@ h1, h2 {
 
 .site-copyright {
   background: #111111;
-  color: #eeeeee; }
+  color: #EEEEEE; }
 
 .home .masthead {
   background-image: url("../images/masthead.jpg");
@@ -5640,7 +5640,20 @@ h1, h2 {
   background-position: center center;
   background-repeat: none;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  .home .masthead .container > .content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
+    padding: 10px 32px;
+    background-color: rgba(245, 245, 245, 0.6);
+    color: black;
+    outline: 1px solid black; }
 .home .featured-projects {
   background: #FAFAFA; }
   .home .featured-projects .thumbnail {
@@ -5659,7 +5672,7 @@ h1, h2 {
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
 .home .about-me {
-  background: lavender; }
+  background: #E6E6fA; }
 .home .connect {
   background: #2D2D2D;
   color: #eeeeee; }
@@ -5675,7 +5688,8 @@ h1, h2 {
       border: 3px solid #1D1D1D;
       color: #1D1D1D;
       display: block;
-      padding: 6px 8px; }
+      padding: 6px 8px;
+      transition: all 0.25s ease; }
       .home .connect .social li a:hover, .home .connect .social li a:focus {
         color: white;
         border: 3px solid white;
