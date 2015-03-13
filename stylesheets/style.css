@@ -1321,9 +1321,9 @@ a.bg-danger:hover {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 9px;
+  /*padding-bottom: (($line-height-computed / 2) - 1);*/
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee; }
+  /*border-bottom: 1px solid $page-header-border-color;*/ }
 
 ul,
 ol {
@@ -5624,7 +5624,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
-.recent-projects, .about-me, .connect {
+h1, h2 {
+  text-transform: uppercase; }
+
+.featured-projects, .about-me, .connect {
   padding-bottom: 36px; }
 
 .site-copyright {
@@ -5638,17 +5641,17 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: none;
   background-attachment: fixed;
   height: 100vh; }
-.home .recent-projects {
-  background: white; }
-  .home .recent-projects .thumbnail {
-    transition: all 0.25s ease-out; }
-  .home .recent-projects .viewMore {
+.home .featured-projects {
+  background: #FAFAFA; }
+  .home .featured-projects .thumbnail {
+    transition: all 0.25s ease; }
+  .home .featured-projects .viewMore {
     margin-top: 16px; }
-.home .recent-projects a:hover,
-.home .recent-projects a:focus {
+.home .featured-projects a:hover,
+.home .featured-projects a:focus {
   text-decoration: none; }
-  .home .recent-projects a:hover .thumbnail,
-  .home .recent-projects a:focus .thumbnail {
+  .home .featured-projects a:hover .thumbnail,
+  .home .featured-projects a:focus .thumbnail {
     background: lightblue;
     position: relative;
     z-index: 10;
@@ -5660,13 +5663,23 @@ h1, h2, h3, h4, h5, h6 {
 .home .connect {
   background: #2D2D2D;
   color: #eeeeee; }
+  .home .connect .social {
+    padding: 0;
+    margin: 0; }
   .home .connect .social li {
-    background: lightblue;
-    padding: 6px 8px;
-    border: 2px solid lightblue;
+    background: white;
+    padding: 0;
+    display: inline-block;
     margin-left: 5px; }
-    .home .connect .social li:hover {
-      background: white; }
+    .home .connect .social li a {
+      border: 3px solid #1D1D1D;
+      color: #1D1D1D;
+      display: block;
+      padding: 6px 8px; }
+      .home .connect .social li a:hover, .home .connect .social li a:focus {
+        color: white;
+        border: 3px solid white;
+        background: #1D1D1D; }
 
 .projects {
   /*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */ }
@@ -5677,5 +5690,10 @@ h1, h2, h3, h4, h5, h6 {
   .projects .row.no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0; }
+
+@media (max-width: 500px) {
+  .home .connect .social li {
+    display: block;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

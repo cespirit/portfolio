@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-$recent-proj-bg			: white;
+$featured-proj-bg		: #FAFAFA;
 $about-me-bg			: lavender;
 $connect-bg				: #2D2D2D;
 $site-copyright-bg		: #111111;
@@ -14,7 +14,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.recent-projects, .about-me, .connect {
+h1, h2 {
+	text-transform: uppercase;
+}
+
+.featured-projects, .about-me, .connect {
 	padding-bottom: 36px;
 }
 
@@ -33,11 +37,11 @@ h1, h2, h3, h4, h5, h6 {
 		height: 100vh;
 	}
 
-	.recent-projects {
-		background: $recent-proj-bg;
+	.featured-projects {
+		background: $featured-proj-bg;
 
 		.thumbnail {
-			transition: all 0.25s ease-out;			
+			transition: all 0.25s ease;			
 		}
 
 		.viewMore {
@@ -45,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	.recent-projects a:hover, 
-	.recent-projects a:focus {
+	.featured-projects a:hover, 
+	.featured-projects a:focus {
 		text-decoration: none;
 
 		.thumbnail {
@@ -67,14 +71,28 @@ h1, h2, h3, h4, h5, h6 {
 		background: $connect-bg;
 		color: #eeeeee;
 
-		.social li {
-		  background: lightblue;
-		  padding: 6px 8px;
-		  border: 2px solid lightblue;
-		  margin-left: 5px;
+		.social {
+			padding: 0;
+			margin: 0;
+		}
 
-		  &:hover {
-		  	background: white;
+		.social li {
+		  background: white;		  		  
+		  padding: 0;
+		  display: inline-block;
+		  margin-left: 5px;		  
+
+		  a {
+		  	border: 3px solid #1D1D1D;
+		  	color: #1D1D1D;	
+		  	display: block;
+		  	padding: 6px 8px;
+
+		  	&:hover, &:focus {
+		  		color: white;
+		  		border: 3px solid white;
+		  		background: #1D1D1D;
+		  	}	  	
 		  }
 		}
 	}	
@@ -92,6 +110,13 @@ h1, h2, h3, h4, h5, h6 {
 	   padding-left: 0;
 	}
 }
- 
 
+@media (max-width: 500px) {
+	.home {
+		.connect .social li {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+}
 
