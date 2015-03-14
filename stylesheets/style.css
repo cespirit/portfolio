@@ -5680,7 +5680,7 @@ h1, h2 {
     color: black;
     border: 1px solid #000;
     border-radius: 7px;
-    padding: 20px 0;
+    padding: 20px 10px;
     width: 60%; }
   .home .masthead h1 {
     font-family: "Merriweather Sans", sans-serif;
