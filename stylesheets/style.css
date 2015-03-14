@@ -1,3 +1,4 @@
+/*lighten($gray-light, 15%) !default;*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -3900,14 +3901,14 @@ tbody.collapse.in {
   background-color: #222;
   border-color: #090909; }
   .navbar-inverse .navbar-brand {
-    color: #9d9d9d; }
+    color: #fff; }
     .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
       color: #fff;
       background-color: transparent; }
   .navbar-inverse .navbar-text {
     color: #9d9d9d; }
   .navbar-inverse .navbar-nav > li > a {
-    color: #9d9d9d; }
+    color: #fff; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
       color: #fff;
       background-color: transparent; }
@@ -3935,7 +3936,7 @@ tbody.collapse.in {
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
       background-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-      color: #9d9d9d; }
+      color: #fff; }
       .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #fff;
         background-color: transparent; }
@@ -3946,11 +3947,11 @@ tbody.collapse.in {
       color: #444;
       background-color: transparent; } }
   .navbar-inverse .navbar-link {
-    color: #9d9d9d; }
+    color: #fff; }
     .navbar-inverse .navbar-link:hover {
       color: #fff; }
   .navbar-inverse .btn-link {
-    color: #9d9d9d; }
+    color: #fff; }
     .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
       color: #fff; }
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
@@ -5630,15 +5631,38 @@ h1, h2 {
 .featured-projects, .about-me, .connect {
   padding-bottom: 36px; }
 
+.connect {
+  background: #2D2D2D;
+  color: #eeeeee; }
+  .connect .social {
+    padding: 0;
+    margin: 0; }
+  .connect .social li {
+    background: white;
+    padding: 0;
+    display: inline-block;
+    margin-left: 5px; }
+    .connect .social li a {
+      border: 3px solid #1D1D1D;
+      color: #1D1D1D;
+      display: block;
+      padding: 6px 8px;
+      -webkit-transition: all 0.25s ease;
+      transition: all 0.25s ease; }
+      .connect .social li a:hover, .connect .social li a:focus {
+        color: white;
+        border: 3px solid white;
+        background: #1D1D1D; }
+
 .site-copyright {
   background: #111111;
   color: #EEEEEE; }
 
 .home .masthead {
   background-image: url("../images/masthead.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
   position: relative;
@@ -5657,7 +5681,15 @@ h1, h2 {
 .home .featured-projects {
   background: #FAFAFA; }
   .home .featured-projects .thumbnail {
-    transition: all 0.25s ease; }
+    -webkit-transition: background .35s ease;
+    transition: background .35s ease; }
+    .home .featured-projects .thumbnail .img-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+    .home .featured-projects .thumbnail .img-container > img {
+      -webkit-transition: all .35s ease;
+      transition: all .35s ease; }
   .home .featured-projects .viewMore {
     margin-top: 16px; }
 .home .featured-projects a:hover,
@@ -5665,35 +5697,14 @@ h1, h2 {
   text-decoration: none; }
   .home .featured-projects a:hover .thumbnail,
   .home .featured-projects a:focus .thumbnail {
-    background: lightblue;
-    position: relative;
-    z-index: 10;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
+    background: lightblue; }
+    .home .featured-projects a:hover .thumbnail .img-container > img,
+    .home .featured-projects a:focus .thumbnail .img-container > img {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
 .home .about-me {
   background: #E6E6fA; }
-.home .connect {
-  background: #2D2D2D;
-  color: #eeeeee; }
-  .home .connect .social {
-    padding: 0;
-    margin: 0; }
-  .home .connect .social li {
-    background: white;
-    padding: 0;
-    display: inline-block;
-    margin-left: 5px; }
-    .home .connect .social li a {
-      border: 3px solid #1D1D1D;
-      color: #1D1D1D;
-      display: block;
-      padding: 6px 8px;
-      transition: all 0.25s ease; }
-      .home .connect .social li a:hover, .home .connect .social li a:focus {
-        color: white;
-        border: 3px solid white;
-        background: #1D1D1D; }
 
 .projects {
   /*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */ }
@@ -5706,7 +5717,7 @@ h1, h2 {
     padding-left: 0; }
 
 @media (max-width: 500px) {
-  .home .connect .social li {
+  .connect .social li {
     display: block;
     margin-bottom: 10px; } }
 

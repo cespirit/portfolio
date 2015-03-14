@@ -22,6 +22,38 @@ h1, h2 {
 	padding-bottom: 36px;
 }
 
+.connect {
+	background: $connect-bg;
+	color: #eeeeee;
+
+	.social {
+		padding: 0;
+		margin: 0;
+	}
+
+	.social li {
+	  background: white;		  		  
+	  padding: 0;
+	  display: inline-block;
+	  margin-left: 5px;		  
+
+	  a {
+	  	border: 3px solid #1D1D1D;
+	  	color: #1D1D1D;	
+	  	display: block;
+	  	padding: 6px 8px;
+	  	-webkit-transition: all 0.25s ease;
+	  	transition: all 0.25s ease;
+	
+	  	&:hover, &:focus {
+	  		color: white;
+	  		border: 3px solid white;
+	  		background: #1D1D1D;
+	  	}	  	
+	  }
+	}
+}
+
 .site-copyright {
 	background: $site-copyright-bg;
 	color: #EEEEEE;
@@ -30,9 +62,9 @@ h1, h2 {
 .home {
 	.masthead {
 		background-image: url("../images/masthead.jpg");
-		background-size: cover;
+		background-size: 100% 100%;
 		background-position: center center;
-		background-repeat: none;
+		background-repeat: no-repeat;
 		background-attachment: fixed;
 		height: 100vh;
 		position: relative;
@@ -48,15 +80,27 @@ h1, h2 {
 		  	padding: 10px 32px;	
 		  	background-color: rgba(245, 245, 245, 0.6);
 		  	color: black;
-		  	outline: 1px solid black;
+		  	outline: 1px solid black;		  	
 		}
 	}
 
 	.featured-projects {
 		background: $featured-proj-bg;
 
-		.thumbnail {
-			transition: all 0.25s ease;			
+		.thumbnail { 
+			-webkit-transition: background .35s ease;
+	    	transition: background .35s ease;	
+
+			.img-container {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.img-container > img {
+				-webkit-transition: all .35s ease;
+	    		transition: all .35s ease;	    		
+    		}
 		}
 
 		.viewMore {
@@ -66,51 +110,21 @@ h1, h2 {
 
 	.featured-projects a:hover, 
 	.featured-projects a:focus {
-		text-decoration: none;
+		text-decoration: none;		
 
 		.thumbnail {
 			background: lightblue;
-			position: relative;			
-			z-index: 10;
-			-webkit-transform: scale(1.1);
-			-ms-transform: scale(1.1);
-			transform: scale(1.1);
+
+			.img-container > img {
+				-webkit-transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				transform: scale(1.2);
+			}	
 		}
 	}
 
 	.about-me {
 		background: $about-me-bg;
-	}
-
-	.connect {
-		background: $connect-bg;
-		color: #eeeeee;
-
-		.social {
-			padding: 0;
-			margin: 0;
-		}
-
-		.social li {
-		  background: white;		  		  
-		  padding: 0;
-		  display: inline-block;
-		  margin-left: 5px;		  
-
-		  a {
-		  	border: 3px solid #1D1D1D;
-		  	color: #1D1D1D;	
-		  	display: block;
-		  	padding: 6px 8px;
-		  	transition: all 0.25s ease;	
-
-		  	&:hover, &:focus {
-		  		color: white;
-		  		border: 3px solid white;
-		  		background: #1D1D1D;
-		  	}	  	
-		  }
-		}
 	}	
 }
 
@@ -128,11 +142,9 @@ h1, h2 {
 }
 
 @media (max-width: 500px) {
-	.home {
-		.connect .social li {
-			display: block;
-			margin-bottom: 10px;
-		}
+	.connect .social li {
+		display: block;
+		margin-bottom: 10px;
 	}
 }
 
