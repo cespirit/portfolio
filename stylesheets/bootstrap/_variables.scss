@@ -43,11 +43,15 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
+$custom-family-sans-serif: 	"Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$custom-family-serif: 		Merriweather, Georgia, "Times New Roman", Times, serif !default;
+
+
 $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-base:        /*$font-family-sans-serif !default;*/ $custom-family-sans-serif !default;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -66,7 +70,7 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
+$headings-font-family:    /*inherit !default;*/ $custom-family-serif !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
@@ -417,6 +421,8 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
+
+$navbar-font-weight:						700;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;

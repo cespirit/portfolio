@@ -70,17 +70,30 @@ h1, h2 {
 		position: relative;
 		overflow: hidden;
 
-		.container > .content {
+		.content {
 			position: absolute;
 		  	top: 35%;
 		  	left: 50%;
 		  	-webkit-transform: translate(-50%, -35%);
 		  	-ms-transform: translate(-50%, -35%);
 		  	transform: translate(-50%, -35%);
-		  	padding: 10px 32px;	
 		  	background-color: rgba(245, 245, 245, 0.6);
 		  	color: black;
-		  	outline: 1px solid black;		  	
+		  	border: 1px solid #000;
+		  	border-radius: 7px;		
+
+		  	padding: 20px 0;
+		  	width: 60%;
+		}
+
+		h1 {
+			font-family: "Merriweather Sans", sans-serif;
+			font-weight: 700;
+			margin-top: 0;
+		}
+
+		h3 {
+			font-weight: 700;
 		}
 	}
 
@@ -145,6 +158,13 @@ h1, h2 {
 	.connect .social li {
 		display: block;
 		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.home .masthead .content {
+		width: 100%;
+		border-radius: 0;
 	}
 }
 

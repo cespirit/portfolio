@@ -168,6 +168,8 @@
   line-height: $line-height-computed;
   height: $navbar-height;
 
+  font-weight: $navbar-font-weight;
+
   &:hover,
   &:focus {
     text-decoration: none;
