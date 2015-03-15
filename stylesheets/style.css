@@ -5755,10 +5755,21 @@ h1, h2 {
     .projects .img-caption > .content {
       position: relative;
       top: 20%;
-      text-shadow: 1px 1px goldenrod; }
+      text-shadow: 1px 1px goldenrod;
+      top: 30%;
+      left: 50%;
+      -ms-transform: translate(-50%, -30%);
+      -webkit-transform: translate(-50%, -30%);
+      transform: translate(-50%, -30%);
+      padding: 0 14px; }
   .projects .img-container:hover .img-caption {
     visibility: visible; }
 
+@media (max-width: 420px) {
+  .personal-projects .container,
+  .volunteer-projects .container {
+    padding-left: 0;
+    padding-right: 0; } }
 @media (max-width: 500px) {
   .connect .social li {
     display: block;

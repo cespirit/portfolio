@@ -187,18 +187,34 @@ h1, h2 {
 		background: rgba(0,0,0,0.8);
 		color: #FFF;
 		visibility: hidden;
-		transition: visibility .15s ease;	
+		transition: visibility .15s ease;			
 
 		& > .content {
 			position: relative;
 			top: 20%;
 			text-shadow: 1px 1px goldenrod;
+
+			top: 30%;
+			left: 50%;
+			-ms-transform: translate(-50%, -30%);
+			-webkit-transform: translate(-50%, -30%);
+			transform: translate(-50%, -30%);
+
+			padding: 0 14px;
 		}
 	}
 
 	.img-container:hover .img-caption {
 		visibility: visible;
 	}
+}
+
+@media (max-width: 420px) {
+	.personal-projects .container, 
+	.volunteer-projects .container {
+		padding-left: 0;
+		padding-right: 0;
+	} 
 }
 
 @media (max-width: 500px) {
