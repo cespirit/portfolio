@@ -158,7 +158,7 @@ h1, h2 {
 	}
 
 	.personal-projects, .volunteer-projects {
-		padding-bottom: 24px;		
+		padding-bottom: 36px; 		
 	}
 
 	.personal-projects {
@@ -190,10 +190,8 @@ h1, h2 {
 		transition: visibility .15s ease;			
 
 		& > .content {
-			position: relative;
-			top: 20%;
 			text-shadow: 1px 1px goldenrod;
-
+			position: relative;
 			top: 30%;
 			left: 50%;
 			-ms-transform: translate(-50%, -30%);
@@ -217,14 +215,12 @@ h1, h2 {
 	} 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 	.connect .social li {
 		display: block;
 		margin-bottom: 10px;
 	}
-}
 
-@media (max-width: 768px) {
 	.home .masthead .content {
 		width: 100%;
 		border-radius: 0;

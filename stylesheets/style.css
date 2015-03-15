@@ -5730,7 +5730,7 @@ h1, h2 {
   .projects .masthead {
     background-color: #E6E6fA; }
   .projects .personal-projects, .projects .volunteer-projects {
-    padding-bottom: 24px; }
+    padding-bottom: 36px; }
   .projects .personal-projects {
     background-color: #E6E6fA; }
   .projects .img-container {
@@ -5753,9 +5753,8 @@ h1, h2 {
     visibility: hidden;
     transition: visibility .15s ease; }
     .projects .img-caption > .content {
-      position: relative;
-      top: 20%;
       text-shadow: 1px 1px goldenrod;
+      position: relative;
       top: 30%;
       left: 50%;
       -ms-transform: translate(-50%, -30%);
@@ -5770,11 +5769,11 @@ h1, h2 {
   .volunteer-projects .container {
     padding-left: 0;
     padding-right: 0; } }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .connect .social li {
     display: block;
-    margin-bottom: 10px; } }
-@media (max-width: 768px) {
+    margin-bottom: 10px; }
+
   .home .masthead .content {
     width: 100%;
     border-radius: 0; } }
