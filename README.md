@@ -1,6 +1,6 @@
 Portfolio
 ================
-Portfolio of my projects.
+Portfolio of my projects. Can be viewed here: http://cespirit.github.io/portfolio
 
 <h3>Notes</h3>
 <p>The folders stylesheets and javascripts are used for unminified sass and javascript files.</p>
