@@ -5633,6 +5633,15 @@ h1, h2 {
 .featured-projects, .about-me, .connect {
   padding-bottom: 36px; }
 
+.img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.img-container > img {
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease; }
+
 .connect {
   background: #2D2D2D;
   color: #eeeeee; }
@@ -5652,7 +5661,7 @@ h1, h2 {
       -webkit-transition: all 0.25s ease;
       transition: all 0.25s ease; }
       .connect .social li a:hover, .connect .social li a:focus {
-        color: white;
+        color: goldenrod;
         border: 3px solid white;
         background: #1D1D1D; }
 
@@ -5693,13 +5702,6 @@ h1, h2 {
   .home .featured-projects .thumbnail {
     -webkit-transition: background .35s ease;
     transition: background .35s ease; }
-    .home .featured-projects .thumbnail .img-container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden; }
-    .home .featured-projects .thumbnail .img-container > img {
-      -webkit-transition: all .35s ease;
-      transition: all .35s ease; }
   .home .featured-projects .viewMore {
     margin-top: 16px; }
 .home .featured-projects a:hover,
@@ -5708,11 +5710,11 @@ h1, h2 {
   .home .featured-projects a:hover .thumbnail,
   .home .featured-projects a:focus .thumbnail {
     background: lightblue; }
-    .home .featured-projects a:hover .thumbnail .img-container > img,
-    .home .featured-projects a:focus .thumbnail .img-container > img {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2); }
+  .home .featured-projects a:hover .img-container > img,
+  .home .featured-projects a:focus .img-container > img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 .home .about-me {
   background: #E6E6fA; }
 
@@ -5725,6 +5727,37 @@ h1, h2 {
   .projects .row.no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0; }
+  .projects .masthead {
+    background-color: #E6E6fA; }
+  .projects .personal-projects, .projects .volunteer-projects {
+    padding-bottom: 24px; }
+  .projects .personal-projects {
+    background-color: #E6E6fA; }
+  .projects .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .projects .img-container:hover > img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .projects .img-caption {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    outline: 1px solid blue;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    visibility: hidden;
+    transition: visibility .15s ease; }
+    .projects .img-caption > .content {
+      position: relative;
+      top: 20%;
+      text-shadow: 1px 1px goldenrod; }
+  .projects .img-container:hover .img-caption {
+    visibility: visible; }
 
 @media (max-width: 500px) {
   .connect .social li {
@@ -5734,5 +5767,8 @@ h1, h2 {
   .home .masthead .content {
     width: 100%;
     border-radius: 0; } }
+@media (max-width: 1199px) {
+  .projects .row > div {
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
