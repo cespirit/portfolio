@@ -3,7 +3,7 @@
 $featured-proj-bg		: #FAFAFA;
 $about-me-bg			: #E6E6fA;
 $project-masthead-bg	: #E6E6fA;
-$project-personal-bg	: #E6E6fA;
+$project-personal-bg	: #F08080;	/*#E6E6fA;*/
 $connect-bg				: #2D2D2D;
 $site-copyright-bg		: #111111;
 
@@ -13,6 +13,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+	color: #141414;
 }
 
 h1, h2 {
@@ -37,6 +38,10 @@ h1, h2 {
 .connect {
 	background: $connect-bg;
 	color: #eeeeee;
+
+	h2 {
+		color: #FFFFFF;
+	}
 
 	.social {
 		padding: 0;
@@ -156,6 +161,10 @@ h1, h2 {
 	   padding-left: 0;
 	}
 
+	h3 {
+		color: #FFFFFF;
+	}
+
 	.masthead {
 		background-color: $project-masthead-bg;
 	}
@@ -165,7 +174,7 @@ h1, h2 {
 	}
 
 	.personal-projects {
-		background-color: $project-personal-bg;
+		background-color: $project-personal-bg;		
 	}
 
 	.img-container {
@@ -216,6 +225,10 @@ h1, h2 {
 		padding-left: 0;
 		padding-right: 0;
 	} 
+
+	.projects h1 {
+		font-weight: 700;
+	}
 }
 
 @media (max-width: 768px) {

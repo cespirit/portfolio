@@ -5621,11 +5621,13 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/*#E6E6fA;*/
 body {
   padding-top: 50px; }
 
 h1, h2, h3, h4, h5, h6 {
-  text-align: center; }
+  text-align: center;
+  color: #141414; }
 
 h1, h2 {
   text-transform: uppercase; }
@@ -5645,6 +5647,8 @@ h1, h2 {
 .connect {
   background: #2D2D2D;
   color: #eeeeee; }
+  .connect h2 {
+    color: #FFFFFF; }
   .connect .social {
     padding: 0;
     margin: 0; }
@@ -5728,12 +5732,14 @@ h1, h2 {
   .projects .row.no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0; }
+  .projects h3 {
+    color: #FFFFFF; }
   .projects .masthead {
     background-color: #E6E6fA; }
   .projects .personal-projects, .projects .volunteer-projects {
     padding-bottom: 36px; }
   .projects .personal-projects {
-    background-color: #E6E6fA; }
+    background-color: #F08080; }
   .projects .img-container {
     position: relative;
     width: 100%;
@@ -5769,7 +5775,10 @@ h1, h2 {
   .personal-projects .container,
   .volunteer-projects .container {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .projects h1 {
+    font-weight: 700; } }
 @media (max-width: 768px) {
   .connect .social li {
     display: block;
