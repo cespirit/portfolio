@@ -5714,7 +5714,7 @@ h1, h2 {
   text-decoration: none; }
   .home .featured-projects a:hover .thumbnail,
   .home .featured-projects a:focus .thumbnail {
-    background: lightblue; }
+    background: #F08080; }
   .home .featured-projects a:hover .img-container > img,
   .home .featured-projects a:focus .img-container > img {
     -webkit-transform: scale(1.2);
