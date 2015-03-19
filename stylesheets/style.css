@@ -5732,7 +5732,8 @@ h1, h2 {
     padding-right: 0;
     padding-left: 0; }
   .projects h3 {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-weight: 600; }
   .projects .masthead {
     background-color: #E6E6fA; }
   .projects .personal-projects, .projects .volunteer-projects {
