@@ -1057,7 +1057,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1138,8 +1138,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
-  font-weight: 500;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   line-height: 1.1;
   color: inherit; }
   h1 small,
@@ -5018,7 +5018,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5113,7 +5113,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857;
@@ -5623,7 +5623,8 @@ button.close {
     display: none !important; } }
 /*#E6E6fA;*/
 body {
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-weight: 600; }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -5696,14 +5697,12 @@ h1, h2 {
     padding: 20px 10px;
     width: 55%;
     text-shadow: 1px 2px goldenrod; }
-  .home .masthead h1, .home .masthead h3 {
-    font-weight: 700; }
   .home .masthead h1 {
     margin-top: 0; }
-  .home .masthead h3 {
-    font-family: "Merriweather Sans", sans-serif; }
 .home .featured-projects {
   background: #FAFAFA; }
+  .home .featured-projects h4 {
+    font-weight: 600; }
   .home .featured-projects .thumbnail {
     -webkit-transition: background .35s ease;
     transition: background .35s ease; }
@@ -5775,10 +5774,7 @@ h1, h2 {
   .personal-projects .container,
   .volunteer-projects .container {
     padding-left: 0;
-    padding-right: 0; }
-
-  .projects h1 {
-    font-weight: 700; } }
+    padding-right: 0; } }
 @media (max-width: 768px) {
   .connect .social li {
     display: block;
