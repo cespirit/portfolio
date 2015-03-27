@@ -1,11 +1,14 @@
 @import "bootstrap";
 
+$home-masthead-bg		: #F08080;
 $featured-proj-bg		: #FAFAFA;
 $about-me-bg			: #E6E6fA;
 $project-masthead-bg	: #E6E6fA;
-$project-personal-bg	: #F08080;	
+$project-personal-bg	: /* #F08080; */ #F7B5B5;
 $connect-bg				: #2D2D2D;
 $site-copyright-bg		: #111111;
+$accent-color			: #F08080;  /* lightcoral */
+$accent-color2			: #DAA520; /* goldenrod */
 
 body { 
 	padding-top: 50px; 
@@ -14,7 +17,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	color: #141414;
 }
 
 h1, h2 {
@@ -64,7 +66,7 @@ h1, h2 {
 	  	transition: all 0.35s ease;
 	
 	  	&:hover, &:focus {
-	  		color: lightcoral;
+	  		color: $accent-color;
 	  		border: 3px solid white;
 	  		background: #1D1D1D;
 	  	}	  	
@@ -96,12 +98,11 @@ h1, h2 {
 		  	-ms-transform: translate(-50%, -35%);
 		  	transform: translate(-50%, -35%);
 		  	background-color: rgba(245, 245, 245, 1);
-		  	color: black;
-		  	border: 1px solid #000;
+		  	border: 1px solid lighten(#000, 30%);
 		  	border-radius: 7px;		
 		  	padding: 20px 10px;
 		  	width: 55%;
-		  	text-shadow: 2px 2px 5px lightcoral; 
+		  	text-shadow: 1px 1px 4px darken($accent-color, 10%); 
 		}
 
 		h1 {						
@@ -150,8 +151,8 @@ h1, h2 {
 	}	
 }
 
-.projects {
-	/*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */
+/*! http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/ */
+.projects {	
 	.row.no-gutters {
 	   margin-right: 0;
 	   margin-left: 0;
@@ -204,7 +205,7 @@ h1, h2 {
 		transition: visibility .15s ease;			
 
 		& > .content {
-			text-shadow: 1px 1px goldenrod;
+			text-shadow: 1px 1px $accent-color2;
 			position: relative;
 			top: 30%;
 			left: 50%;
@@ -246,13 +247,13 @@ h1, h2 {
 
 	.home .masthead {
 		background-image: none;
-  		background: lightcoral;
+  		background: $home-masthead-bg;
 	}
 
 	.home .masthead .content {
 		border: none;
 		padding: 40px 10px;
-		text-shadow: none;
+		text-shadow: 0 1px 3px $accent-color; 
 	}
 }
 
