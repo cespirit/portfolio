@@ -7,7 +7,7 @@ $project-masthead-bg	: #E6E6fA;
 $project-personal-bg	: /* #F08080; */ #F7B5B5;
 $connect-bg				: #2D2D2D;
 $site-copyright-bg		: #111111;
-$accent-color			: #F08080;  /* lightcoral */
+$accent-color			: #F08080;  /* lightcoral */ 
 $accent-color2			: #DAA520; /* goldenrod */
 
 body { 
@@ -33,7 +33,7 @@ h1, h2 {
 	overflow: hidden;
 }
 
-.img-container > img {
+.img-container img {
 	-webkit-transition: all .35s ease;
 	transition: all .35s ease;	    		
 }
@@ -136,13 +136,7 @@ h1, h2 {
 		text-decoration: none;		
 
 		.thumbnail {
-			background: #F08080;
-		}
-
-		.img-container > img {
-			-webkit-transform: scale(1.2);
-			-ms-transform: scale(1.2);
-			transform: scale(1.2);
+			background: $accent-color;
 		}
 	}
 
@@ -186,7 +180,7 @@ h1, h2 {
 		height: 100%;
 	}
 
-	.img-container:hover > img {
+	.img-container:hover img {
 		-webkit-transform: scale(1.2);
 		-ms-transform: scale(1.2);
 		transform: scale(1.2);
@@ -212,7 +206,6 @@ h1, h2 {
 			-ms-transform: translate(-50%, -30%);
 			-webkit-transform: translate(-50%, -30%);
 			transform: translate(-50%, -30%);
-
 			padding: 0 14px;
 		}
 	}

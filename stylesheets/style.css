@@ -5641,7 +5641,7 @@ h1, h2 {
   height: 100%;
   overflow: hidden; }
 
-.img-container > img {
+.img-container img {
   -webkit-transition: all .35s ease;
   transition: all .35s ease; }
 
@@ -5715,11 +5715,6 @@ h1, h2 {
   .home .featured-projects a:hover .thumbnail,
   .home .featured-projects a:focus .thumbnail {
     background: #F08080; }
-  .home .featured-projects a:hover .img-container > img,
-  .home .featured-projects a:focus .img-container > img {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2); }
 .home .about-me {
   background: #E6E6fA; }
 
@@ -5744,7 +5739,7 @@ h1, h2 {
   position: relative;
   width: 100%;
   height: 100%; }
-.projects .img-container:hover > img {
+.projects .img-container:hover img {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2); }

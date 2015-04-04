@@ -4,18 +4,19 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Charlene Espiritu</title>
+    <meta name="description" content="Charlene Espiritu front end web developer portfolio">
+    <title>Charlene Espiritu - Home</title>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">  
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800,400' rel='stylesheet' type='text/css'>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="css/picturefill.min.js" async></script>
 </head>
 <body id="top">
 
@@ -63,7 +64,14 @@
                         <a href="http://www.sdcda.org/office/yab/redefine-success/home.html">
                             <div class="thumbnail">
                                 <div class="img-container">
-                                    <img src="images/projects/yab-rs-862.jpg" class="img-responsive" alt="Redefine Success thumbnail">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source srcset="images/projects/yab-rs-456-sm_1x.jpg" media="(min-width: 1200px)">
+                                        <source srcset="images/projects/yab-rs-862-md_1x.jpg" media="(min-width: 457px)">
+                                        <source srcset="images/projects/yab-rs-456-sm_1x.jpg" media="(min-width: 365px)">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img srcset="images/projects/yab-rs-384-xs_1x.jpg" class="img-responsive" alt="Redefine Success Project">
+                                    </picture>
                                 </div>
                                 <div class="caption">
                                     <h4>Redefine Success</h4>
@@ -75,7 +83,14 @@
                         <a href="http://cespirit.github.io/bring-back-that-jam/">
                             <div class="thumbnail">
                                 <div class="img-container">
-                                    <img src="images/projects/bbtj-862.jpg" class="img-responsive" alt="Bring Back That Jam thumbnail">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source srcset="images/projects/bbtj-456-sm_1x.jpg" media="(min-width: 1200px)">
+                                        <source srcset="images/projects/bbtj-862-md_1x.jpg" media="(min-width: 457px)">
+                                        <source srcset="images/projects/bbtj-456-sm_1x.jpg" media="(min-width: 365px)">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img srcset="images/projects/bbtj-384-xs_1x.jpg" class="img-responsive" alt="Bring Back That Jam App">
+                                    </picture>                                    
                                 </div>
                                 <div class="caption">
                                     <h4>Bring Back That Jam</h4>
@@ -87,7 +102,14 @@
                         <a href="http://cespirit.github.io/pokemon-quiz-app/">
                             <div class="thumbnail">
                                 <div class="img-container">
-                                    <img src="images/projects/pkQuiz2-862.png" class="img-responsive" alt="Pokemon Quiz Game thumbnail">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source srcset="images/projects/pkQuiz2-456-sm_1x.jpg" media="(min-width: 1200px)">
+                                        <source srcset="images/projects/pkQuiz2-862-md_1x.jpg" media="(min-width: 457px)">
+                                        <source srcset="images/projects/pkQuiz2-456-sm_1x.jpg" media="(min-width: 365px)">
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img srcset="images/projects/pkQuiz2-384-xs_1x.jpg" class="img-responsive" alt="Pokemon Quiz Game">
+                                    </picture> 
                                 </div>
                                 <div class="caption">
                                     <h4>Pokemon Quiz Game</h4>

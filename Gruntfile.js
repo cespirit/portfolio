@@ -41,6 +41,34 @@ module.exports = function(grunt) {
 			}
 		}, 
 
+		responsive_images: {
+			dev: {
+				options: {
+					engine: 'gm',
+					sizes: [{
+						width: 862,
+						suffix: "-md_1x",
+						quality: 80
+					},{
+						width: 456,
+						suffix: "-sm_1x",
+						quality: 80
+					},{
+						width: 384,
+						suffix: "-xs_1x",
+						quality: 80
+					}]
+				},
+
+				files: [{
+					expand: true,
+					src: ['*.{gif,jpg,png}'],
+					cwd: 'images/src_images',
+					dest: 'images/projects'
+				}]
+			}
+		},
+
 		watch: {
 			sass: {
 				// If anything in these files changes, run the tasks
@@ -57,6 +85,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-responsive-images');
 
 	grunt.registerTask('default', ['watch']);
 };
