@@ -5675,7 +5675,7 @@ h1, h2 {
   color: #EEEEEE; }
 
 .home .masthead {
-  background-image: url("../images/masthead.jpg");
+  background-image: url("../images/masthead-992-md_1x.jpg");
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -5726,6 +5726,8 @@ h1, h2 {
 .projects .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0; }
+.projects .row > div {
+  margin-bottom: 10px; }
 .projects h3 {
   color: #FFFFFF;
   font-weight: 600; }
@@ -5766,20 +5768,19 @@ h1, h2 {
 .projects .img-container:hover .img-caption {
   visibility: visible; }
 
-@media (max-width: 1400px) {
+@media (min-width: 1200px) {
   .home .masthead {
-    background-image: url("../images/masthead-1400.jpg"); } }
-@media (max-width: 1199px) {
+    background-image: url("../images/masthead.jpg"); }
+
   .projects .row > div {
-    margin-bottom: 10px; } }
+    margin-bottom: 0; } }
+@media (min-width: 992px) {
+  .home .masthead {
+    background-image: url("../images/masthead-1200-lg_1x.jpg"); } }
 @media (max-width: 768px) {
   .connect .social li {
     display: block;
     margin-bottom: 10px; }
-
-  .home .masthead .content {
-    width: 100%;
-    border-radius: 0; }
 
   .home .masthead {
     background-image: none;
@@ -5788,11 +5789,8 @@ h1, h2 {
   .home .masthead .content {
     border: none;
     padding: 40px 10px;
-    text-shadow: 0 1px 3px #F08080; } }
-@media (max-width: 420px) {
-  .personal-projects .container,
-  .volunteer-projects .container {
-    padding-left: 0;
-    padding-right: 0; } }
+    text-shadow: 0 1px 3px #F08080;
+    width: 100%;
+    border-radius: 0; } }
 
 /*# sourceMappingURL=style.css.map */

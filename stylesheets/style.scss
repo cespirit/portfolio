@@ -81,7 +81,7 @@ h1, h2 {
 
 .home {
 	.masthead {
-		background-image: url("../images/masthead.jpg");
+		background-image: url("../images/masthead-992-md_1x.jpg");
 		background-size: 100% 100%;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -157,6 +157,10 @@ h1, h2 {
 	   padding-left: 0;
 	}
 
+	.row > div {
+		margin-bottom: 10px;
+	}
+
 	h3 {
 		color: #FFFFFF;
 		font-weight: 600;
@@ -215,15 +219,19 @@ h1, h2 {
 	}
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1200px) {
 	.home .masthead {
-		background-image: url("../images/masthead-1400.jpg");
+		background-image: url("../images/masthead.jpg");
+	}
+
+	.projects .row > div {
+		margin-bottom: 0;
 	}
 }
 
-@media (max-width: 1199px) {
-	.projects .row > div {
-		margin-bottom: 10px;
+@media (min-width: 992px) {
+	.home .masthead {
+		background-image: url("../images/masthead-1200-lg_1x.jpg");
 	}
 }
 
@@ -231,11 +239,6 @@ h1, h2 {
 	.connect .social li {
 		display: block;
 		margin-bottom: 10px;
-	}
-
-	.home .masthead .content {
-		width: 100%;
-		border-radius: 0;
 	}
 
 	.home .masthead {
@@ -247,13 +250,7 @@ h1, h2 {
 		border: none;
 		padding: 40px 10px;
 		text-shadow: 0 1px 3px $accent-color; 
+		width: 100%;
+		border-radius: 0;
 	}
-}
-
-@media (max-width: 420px) {
-	.personal-projects .container, 
-	.volunteer-projects .container {
-		padding-left: 0;
-		padding-right: 0;
-	} 
 }

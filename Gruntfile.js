@@ -46,17 +46,13 @@ module.exports = function(grunt) {
 				options: {
 					engine: 'gm',
 					sizes: [{
-						width: 862,
+						width: 1200,
+						suffix: "-lg_1x",
+						quality: 90
+					},{
+						width: 992,
 						suffix: "-md_1x",
-						quality: 80
-					},{
-						width: 456,
-						suffix: "-sm_1x",
-						quality: 80
-					},{
-						width: 384,
-						suffix: "-xs_1x",
-						quality: 80
+						quality: 90
 					}]
 				},
 
