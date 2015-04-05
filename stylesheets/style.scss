@@ -101,8 +101,7 @@ h1, h2 {
 		  	border: 1px solid lighten(#000, 30%);
 		  	border-radius: 7px;		
 		  	padding: 20px 10px;
-		  	width: 55%;
-		  	text-shadow: 1px 1px 4px darken($accent-color, 10%); 
+		  	width: 55%;		  	
 		}
 
 		h1 {						
@@ -221,7 +220,7 @@ h1, h2 {
 
 @media (min-width: 1200px) {
 	.home .masthead {
-		background-image: url("../images/masthead.jpg");
+		background-image: url("../images/masthead-2508.jpg");
 	}
 
 	.projects .row > div {
@@ -249,7 +248,6 @@ h1, h2 {
 	.home .masthead .content {
 		border: none;
 		padding: 40px 10px;
-		text-shadow: 0 1px 3px $accent-color; 
 		width: 100%;
 		border-radius: 0;
 	}
