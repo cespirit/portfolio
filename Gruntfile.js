@@ -74,6 +74,10 @@ module.exports = function(grunt) {
 				// If anything in these files changes, run the tasks
 				files: ['stylesheets/*.scss', 'stylesheets/bootstrap/*.scss'],
 				tasks: ['sass', 'cssmin']
+			},
+			uglify: {
+				files: ['javascripts/main.js'],
+				tasks: ['uglify']
 			}
 		},
 
