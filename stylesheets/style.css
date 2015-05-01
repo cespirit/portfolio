@@ -5695,7 +5695,12 @@ h1, h2 {
     border-radius: 7px;
     padding: 20px 10px;
     width: 55%;
-    display: none; }
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .home .masthead h1, .home .masthead h3 {
+    color: white;
+    text-shadow: 2px 2px 2px #000000; }
   .home .masthead h1 {
     margin-top: 0; }
 .home .featured-projects {
@@ -5789,11 +5794,15 @@ h1, h2 {
   .home .masthead {
     background-image: none;
     background: #F08080; }
+    .home .masthead h1, .home .masthead h3 {
+      text-shadow: none;
+      color: #000000; }
 
   .home .masthead .content {
     border: none;
     padding: 40px 10px;
     width: 100%;
-    border-radius: 0; } }
+    border-radius: 0;
+    background: #FFFFFF; } }
 
 /*# sourceMappingURL=style.css.map */

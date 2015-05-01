@@ -103,6 +103,14 @@ h1, h2 {
 		  	padding: 20px 10px;
 		  	width: 55%;	
 		  	display:none;	  	
+
+		  	width: 100%;
+		  	background-color: rgba(0,0,0,0.5);		  	
+		}
+
+		h1, h3 {
+			color: white;
+			text-shadow: 2px 2px 2px #000000;
 		}
 
 		h1 {						
@@ -248,6 +256,11 @@ h1, h2 {
 	.home .masthead {
 		background-image: none;
   		background: $home-masthead-bg;
+
+  		h1, h3 {
+			text-shadow: none;	
+			color: #000000;	
+		}
 	}
 
 	.home .masthead .content {
@@ -255,5 +268,7 @@ h1, h2 {
 		padding: 40px 10px;
 		width: 100%;
 		border-radius: 0;
+
+		background: #FFFFFF;		
 	}
 }
